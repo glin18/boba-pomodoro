@@ -3,6 +3,7 @@ body{
   min-height: 100vh;
   background-color: rgb(237, 221, 202);
   overflow: hidden;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 .bg{
@@ -35,9 +36,11 @@ body{
 .start{
   border: 1px black solid;
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   width: 100px;
   text-align: center;
+  cursor: pointer;
+  background-color: rgb(175, 141, 113);
 }
 
 .stage{
@@ -49,14 +52,38 @@ body{
 .stage div{
   border: 1px black solid;
   padding: 5px;
-  border-radius: 5px;
-  width: 100px;
+  border-radius: 10px;
+  width: 90px;
   text-align: center;
+  cursor: pointer;
+  /* background-color: rgb(175, 141, 113); */
+}
+
+.button:hover{
+  opacity: 1;
 }
 
 @media (min-width: 1000px){
   .bg{
     background-size: 1000px 90%;
+  }
+}
+
+@media (max-height: 600px){
+  .timer{
+    font-size: 30px;
+  }
+  .main-container{
+    gap: 5px;
+  }
+
+  .start{
+    font-size: 12px;
+  }
+
+  .stage div{
+    font-size: 12px;
+    width: 60px;
   }
 }
 
