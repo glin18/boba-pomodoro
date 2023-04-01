@@ -2,6 +2,7 @@ body{
   width: 100%;
   min-height: 100vh;
   background-color: rgb(237, 221, 202);
+  overflow: hidden;
 }
 
 .bg{
@@ -9,9 +10,53 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  z-index: 1;
-  position: fixed;
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  background-size: 610px 90%;
+  background-size: 610px 100%;
+  position: relative;
 }
+
+.main-container{
+  position: absolute;
+  top :57%;
+  left: 49.4%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer{
+  font-size: 50px;
+}
+
+.start{
+  border: 1px black solid;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+.stage{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.stage div{
+  border: 1px black solid;
+  padding: 5px;
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+}
+
+@media (min-width: 1000px){
+  .bg{
+    background-size: 1000px 90%;
+  }
+}
+
