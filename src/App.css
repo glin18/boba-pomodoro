@@ -1,0 +1,17 @@
+body{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(237, 221, 202);
+}
+
+.bg{
+  background-image: url("./images/bubble-tea.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 1;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: 610px 90%;
+}

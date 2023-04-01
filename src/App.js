@@ -3,7 +3,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      boba pomodoro
+      <div className="bg">
+
+      </div>
     </div>
   );
 }
