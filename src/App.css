@@ -43,6 +43,10 @@ body{
   top: 59%;
 }
 
+.settings-container div{
+  text-align: center;
+}
+
 .settings-icon{
   position: fixed;
   top : 10px;

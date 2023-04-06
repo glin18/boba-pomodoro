@@ -16,7 +16,7 @@ export const SettingsContainer = ({ onSubmitHandler }) => {
     <div className="settings-container">
       {/* <div className="settings-title">Boba Settings</div> */}
       <div>Sugar Levels (Work Minutes): {workMinutes}</div>
-      <div class="slidecontainer">
+      <div className="slidecontainer">
         <input
           type="range"
           min="1"
@@ -29,7 +29,7 @@ export const SettingsContainer = ({ onSubmitHandler }) => {
         />
       </div>
       <div>Ice Levels (Break Minutes): {restMinutes}</div>
-      <div class="slidecontainer">
+      <div className="slidecontainer">
         <input
           type="range"
           min="1"
