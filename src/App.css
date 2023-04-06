@@ -39,6 +39,10 @@ body{
   gap: 10px;
 }
 
+.settings-container{
+  top: 59%;
+}
+
 .settings-icon{
   position: fixed;
   top : 10px;
@@ -49,7 +53,14 @@ body{
 }
 
 .settings-title{
-  font-size: 35px;
+  font-size: 25px;
+}
+
+.enter{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 4px 6px;
+  cursor: pointer;
 }
 
 .slider {

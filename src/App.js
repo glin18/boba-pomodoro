@@ -6,6 +6,16 @@ import SettingsIcon from "./images/setting.png";
 
 function App() {
   const [ showSettings, setShowSettings ] = useState(false);
+  const [ workMinutes, setWorkMinutes ] = useState(25);
+  const [ restMinutes, setRestMinutes ] = useState(5);
+
+  const onChangeWork = (value) => {
+    setWorkMinutes(value)
+  }
+
+  const onChangeRest = (value) => {
+    setRestMinutes(value)
+  }
 
   return (
     <div className="App">
