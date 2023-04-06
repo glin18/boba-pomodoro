@@ -1,9 +1,19 @@
 body{
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(237, 221, 202);
+  /* background-color: rgb(237, 221, 202); */
+  background-color: rgb(219, 195, 195);
+  /* background-color: rgb(170, 198, 170); */
   overflow: hidden;
   font-family:Arial, Helvetica, sans-serif
+}
+
+.work{
+  background-color: rgb(219, 195, 195);
+}
+
+.rest{
+  background-color: rgb(170, 198, 170);
 }
 
 .bg{
@@ -40,7 +50,7 @@ body{
   width: 100px;
   text-align: center;
   cursor: pointer;
-  background-color: rgb(175, 141, 113);
+  /* background-color: rgb(175, 141, 113); */
 }
 
 .stage{
@@ -59,8 +69,12 @@ body{
   /* background-color: rgb(175, 141, 113); */
 }
 
+.active{
+  background-color: rgb(175, 141, 113);
+}
+
 .button:hover{
-  opacity: 1;
+  background-color: rgb(175, 141, 113);
 }
 
 @media (min-width: 1000px){
