@@ -23,7 +23,7 @@ export const SettingsContainer = ({ onSubmitHandler }) => {
           max="60"
           value={workMinutes}
           step="1"
-          class="slider"
+          className="slider"
           id="myRange"
           onChange={onChangeWork}
         />
@@ -36,7 +36,7 @@ export const SettingsContainer = ({ onSubmitHandler }) => {
           max="60"
           value={restMinutes}
           step="1"
-          class="slider"
+          className="slider"
           id="myRange"
           onChange={onChangeRest}
         />
