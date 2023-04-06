@@ -6,6 +6,8 @@ export const MainContainer = () => {
   const [isWork, setIsWork] = useState(true);
   const intervalID = useRef(null);
 
+  let audio = new Audio("/alarm.mp3")
+
   const onClickStart = () => {
     setIsRunning(true);
     intervalID.current = setInterval(() => {
@@ -38,6 +40,7 @@ export const MainContainer = () => {
   useEffect(() => {
     if (seconds <= 0) {
       clearInterval(intervalID.current);
+      audio.play()
       toggleWork(!isWork);
     } 
     document.title = (isWork ? "WORK ":"BREAK ") + Math.floor(seconds / 60) + ":" + (seconds % 60 < 10 ? "0" : "") + seconds % 60
