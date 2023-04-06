@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
-export const MainContainer = () => {
-  const [seconds, setSeconds] = useState(8);
+export const MainContainer = ({workTime, restTime}) => {
+  const [seconds, setSeconds] = useState(workTime * 60);
   const [isRunning, setIsRunning] = useState(false);
   const [isWork, setIsWork] = useState(true);
   const intervalID = useRef(null);
@@ -19,10 +19,10 @@ export const MainContainer = () => {
     clearInterval(intervalID.current)
     setIsWork(isWorkTime);
     if (isWorkTime) {
-      setSeconds(25);
+      setSeconds(workTime * 60);
       document.body.className="work";
     } else {
-      setSeconds(5);
+      setSeconds(restTime * 60);
       document.body.className="rest";
     }
     if(isRunning){
@@ -43,11 +43,12 @@ export const MainContainer = () => {
       audio.play()
       toggleWork(!isWork);
     } 
-    document.title = (isWork ? "WORK ":"BREAK ") + Math.floor(seconds / 60) + ":" + (seconds % 60 < 10 ? "0" : "") + seconds % 60
+    document.title = Math.floor(seconds / 60) + ":" + (seconds % 60 < 10 ? "0" : "") + seconds % 60 + (isWork ? " WORK":" BREAK")
   }, [seconds]);
 
   useEffect(() => {
     document.title = "Boba Pomodoro"
+    document.body.className="work";
     return () => {
       clearInterval(intervalID.current);
     };
