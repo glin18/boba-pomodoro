@@ -45,6 +45,8 @@ body{
 
 .settings-container div{
   text-align: center;
+  white-space: nowrap;
+
 }
 
 .settings-icon{
@@ -141,6 +143,15 @@ body{
   }
 }
 
+@media(max-height: 820px){
+  .settings-container div{
+    font-size: 16px;
+  }
+  .settings-container {
+    gap: 5px;
+  }
+}
+
 @media (max-height: 600px){
   .timer{
     font-size: 30px;
@@ -156,6 +167,11 @@ body{
   .stage div{
     font-size: 12px;
     width: 60px;
+  }
+
+  .settings-container div{
+    text-align: center;
+    font-size: 13px;
   }
 }
 
