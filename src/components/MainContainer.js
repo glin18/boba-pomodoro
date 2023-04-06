@@ -47,6 +47,7 @@ export const MainContainer = () => {
   }, [seconds]);
 
   useEffect(() => {
+    document.title = "Boba Pomodoro"
     return () => {
       clearInterval(intervalID.current);
     };
